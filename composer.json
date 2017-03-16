@@ -1,0 +1,28 @@
+{
+  "name": "flyeralarm/reseller-api-example",
+  "description": "PHP Binding fot the FLYERALARM Reseller API.",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "FLYERALARM digital GmbH"
+    }
+  ],
+  "minimum-stability": "dev",
+  "repositories": [
+  {
+    "type": "vcs",
+    "name": "flyeralarm/reseller-api",
+    "url": "ssh://git@stash.flyeralarm:7999/eapi/reseller-api.git"
+  }
+],
+  "autoload": {
+    "psr-4": { "flyeralarm\\ResellerApiExample\\": "src/" }
+    },
+  "autoload-dev": {
+    "classmap": ["src/"]
+  },
+  "require": {
+    "php": ">= 5.6.0",
+    "flyeralarm/reseller-api": "@dev"
+  }
+}
