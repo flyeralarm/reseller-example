@@ -8,13 +8,13 @@ html {
 
 html body {
     position: relative;
-    background-color: #f0f0f0;
+    background-color: #FAF7F7;
     text-align: left;
     margin: 0 0 30px;
 }
 
 a {
-    color: #6f1132;
+    color: #E6001E;
 }
 
 div {
@@ -80,7 +80,7 @@ header #toolbar .toolbar-text {
     display: table-cell;
     vertical-align: middle;
     font-size: 40px;
-    color: #6f1132;
+    color: #E6001E;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -114,8 +114,8 @@ button{
     text-align: center;
     cursor: pointer;
     min-width: 40px;
-    background-color: #6f1132;
-    border-color: #6f1132;
+    background-color: #E6001E;
+    border-color: #E6001E;
     color: #fff;
     font-size: 14px;
     line-height: 20px;
@@ -123,7 +123,7 @@ button{
 
 button:hover{
     background-color: #fff;
-    border-color: #6f1132;
-    color: #6f1132;
+    border-color: #E6001E;
+    color: #E6001E;
 
 }
