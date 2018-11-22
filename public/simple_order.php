@@ -57,38 +57,34 @@ $order->setShippingType( $shippingType );
 
 
 // ## Chose Product Options ##
-// These Options are only valid for 'express' shipment.
-// 'standard' offers more options
-$options = $faApi->getAvailableProductOptions($product);
-// Let's select our options:
-// O#3|Datencheck -> OV#3001|Basis-Datencheck
-$options->getById(3)->setSelection(
-    $options->getById(3)->getPossibleValues()->getById(3001)
-);
-// O#9|Digitalproof -> OV#9001|Nein
-$options->getById(9)->setSelection(
-    $options->getById(9)->getPossibleValues()->getById(9001)
-);
+$options = $faApi->getAvailableProductOptions($order);
 
+
+// Set all options to default values ....
+/**
+ * @var $option flyeralarm\ResellerApi\productCatalog\ProductOption
+ */
+foreach ($options as $option){
+    /**
+     * @var $value flyeralarm\ResellerApi\productCatalog\ProductOptionValue
+     */
+    foreach($option->getPossibleValues() as $value){
+        if($value->getBruttoPrice() == 0 ){
+
+            $options->getById( $option->getOptionId() )->setSelection(
+                $options->getById( $option->getOptionId() )->getPossibleValues()->getById( $value->getOptionValueId() )
+            );
+            break;
+        }
+    }
+}
+
+// Set a specific option if needed...
 // O#6|Ecken abrunden -> OV#6001|Nein
 $options->getById(6)->setSelection(
     $options->getById(6)->getPossibleValues()->getById(6001)
 );
 
-// O#5|Perforation -> OV#5001|Nein
-$options->getById(5)->setSelection(
-    $options->getById(5)->getPossibleValues()->getById(5001)
-);
-
-// O#24|Klimaneutraler Druck -> OV#24002|keine Ausgleichszahlung
-$options->getById(24)->setSelection(
-    $options->getById(24)->getPossibleValues()->getById(24002)
-);
-
-// O#102|Lieferadressenauswahl -> OV#102001|1 Lieferadresse
-$options->getById(102)->setSelection(
-    $options->getById(102)->getPossibleValues()->getById(102001)
-);
 
 $order->setProductOptions($options);
 
