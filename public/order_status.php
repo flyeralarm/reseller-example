@@ -39,7 +39,7 @@ if($orderID !== 'DE123456789') {
     $factory = new ApiClientFactory($config);
     $faApi = $factory->createClient();
 
-    $orderStatus = $faApi->getOrderStatus('DE990020706');
+    $orderStatus = $faApi->getOrderStatus($orderID);
 
 
 }
