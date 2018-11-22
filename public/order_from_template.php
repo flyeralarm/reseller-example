@@ -35,7 +35,7 @@ $config ->setAppToken($api_parameters['app_token'])
 $factory = new ApiClientFactory($config);
 $faApi = $factory->createClient();
 
-$string = "eJzlU0FSwzAM/EpGV9KOnaRp41sfABfKcOGixg71jGMH2yktnf4dOaV04AlwW620sta2TvCmQTRFtarLKocQKeI5DA5BnKAEUTJGcUM1E6hB1BNYgFhMoKhAFBVjRQ6cFaRmBfHnHNCkFkFZqXxCresHtEcQADm8ftHQo1EUd9qH+IC9IuoeD8QYvBFjiMr3aC3xKKVXIRC9Np1XcvbgtsrMHqPHl5Ex2amMr251aylB2NGYZCrE1snUsVmyJaOiVsc00HNSdq3/2I7+NdFutClx0RnXpiGvXXbOKk6iu6ppSl7Vi1UFZFcqo/fKH/+BVW33TrfqzztNn3hHK0B74WgvgEM677IhYdRXcUInkBhx49GGTvnNcUgDjYNxKEn0I6cn+7yes3JeML7MeCmKheDL34XqENOFjNH1GHWbPU3tsr3GbD3oeXoJj9ch2vdvtLug8yfaVjHZ";
+$string = "eJzlU8Fy2yAQ/RXNXut4AMu2xM0f0FySTi+9bGAVM4NAAeTG9eTfu8h1M+2l9/T29vHeso9hL/DiQPeq7XabdgW5cCVXMEUEfYEN6I0QXEu1Bd1JIdS+FvtrUR09uxfJDvRuAazcLkC1oFXLHrYIxX2FYv5tBehr80zBUqrIxHHCcAYNsILnXzSM6InrwaVc7nEkpj7jKzMe34k5F0ojhsA8WpsoZ6YPfkhk7+7jE/m7h5Lw2yyEHaiR3bvuYC3oMHtf4+Zioq0d+73YCxYZV+pAX6tzMOnH05yeKx3nUA+uPh9NHfLW5RgDSTZ9avt+I9vdtmuB41ry7kTp/B9EdeEUnaEPn7R+4iMvB29M5I0BCfW+6+7k2d3MFV3AYsHHhCEPlB7PUx1onnxEy6Y/ztwSX6m1lGslZNeIXre9VuJvIb2W+iBziSMWZ5ovS7vm5LA5TG7N8kSso2Don1qOkvA2sPn+Gx2v6O0nJChF+Q==";
 
 // Create an order Object ... we will step by step fill it with data.
 
