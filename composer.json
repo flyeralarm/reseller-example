@@ -12,7 +12,7 @@
   {
     "type": "vcs",
     "name": "flyeralarm/reseller-api",
-    "url": "ssh://git@stash.flyeralarm:7999/eapi/reseller-api.git"
+    "url": "https://github.com/flyeralarm/reseller-api.git"
   }
 ],
   "autoload": {
