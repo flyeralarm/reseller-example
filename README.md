@@ -20,6 +20,6 @@ run:
 ```
 
 Navigate to:
-http://localhost:8090/reseller-example/public/
+http://localhost:8090/
 
 
