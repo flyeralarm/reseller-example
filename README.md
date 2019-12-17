@@ -1,3 +1,9 @@
+# DEPRECATED
+
+With the beginning of July 2020 the current API is beeing replaced with a new one, its documentation can be found at: 
+
+[https://rest.flyeralarm-esolutions.com/docs/](https://rest.flyeralarm-esolutions.com/docs/)
+
 ## FLYERALARM - Simple Reseller
 
 The purpose of this repository is to demonstrate how the
